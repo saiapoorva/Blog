@@ -1,0 +1,34 @@
+
+    <div class="form-group">
+            
+            
+            <button name = "button"  (click) = "dispcomments(postid1)">displaycomment</button><br>
+            <br>
+            <div class = "dstyle" *ngIf = "shown === true">
+                        {{listcomm.comments}}
+                        <label for="inputlg" > Comments</label>   
+
+                        <input class="form-control input-lg" id="inputlg" type="text" name = "comments" [(ngModel)] = "model.comments"  placeholder="comments" required="" autofocus="" />
+                        <br>
+                        <button name = "button" (click) = "commentlike()">Addcomment</button> 
+              
+            </div><br>
+            <br>
+
+            <div>
+                  <button name = "button"  (click) = "likec(postid1)" >like</button>
+                  {{likeco.likedby}} 
+                  </div>      
+                  
+            
+            
+            
+            
+          
+          
+           
+            <!-- <button name = "button" (click) = "commentlike()" >Addcomment</button> -->
+          </div>
+     
+  
+

@@ -1,0 +1,8 @@
+<form>       
+    <h2 class="form-signin-heading">Please create post</h2>
+    
+    <input type="text" class="form-control" name="title" [(ngModel)] = "model.title" placeholder="title" required="" autofocus="" />
+    <input type="text" class="form-control" name="description" [(ngModel)] = "model.description" placeholder="description" required=""/>      
+  
+          <button class="btn btn-lg btn-primary btn-block" type="submit"  (click) = "insert()">Insert</button>   
+  </form>       

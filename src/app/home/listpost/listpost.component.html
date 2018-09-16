@@ -1,0 +1,34 @@
+
+<div class="form-group">
+<div *ngFor = "let y of post">
+        <div class="alert alert-info" id = "username" role="alert" ><a href = "#" [routerLink] = "['/home/Listpost',y._id]"> {{y.username}} </a></div>
+        <p>{{y.title}}</p>
+        <p>{{y.description}}</p>
+     
+       
+       
+   
+    
+            <app-commentlike (commentsEvent) = "commentsparentfn($event)" [postid1] = "y._id"></app-commentlike>
+
+           
+                       
+            
+
+            
+            <app-editpost  (editpostsEvent) = "editpostfn($event)" [postid1] = "y._id"></app-editpost>
+   
+
+
+           
+
+</div>
+
+</div>
+
+        
+      
+      
+      
+
+<!-- <button class="btn btn-lg btn-primary btn-block" type="submit" (click) = "display()">display</button>  -->

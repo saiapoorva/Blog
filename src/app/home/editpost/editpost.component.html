@@ -1,0 +1,23 @@
+<form class="form-inline">
+        
+ 
+  <br> 
+  <div class="form-group">
+  <input type="text" class="form-control" name="title" [(ngModel)] = "model.title" placeholder="title" required="" autofocus="" />
+<br>
+<br>
+
+  <input type="text" class="form-control" name="description" [(ngModel)] = "model.description" placeholder="description" required=""/>  
+</div>
+<br>
+<br>
+
+<div class="form-group">
+    <button class="btn btn-default" type="submit"  (click) = "editpost()" >editpost</button> 
+    </div>
+    <br>
+<br>
+<div class="form-group">
+    <button class="btn btn-default" type="submit"  (click) = "deletepost()">deletepost</button> 
+    </div>
+</form>
